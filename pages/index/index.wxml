@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<import src="../common/templates.wxml"/>
+
+<view class="container daily-index">
+
+  <swiper class='top-swiper' indicator-dots="true" indicator-color="#666" indicator-active-color='#fff' autoplay='true'>
+    <block wx:for="{{topStories}}" wx:key="{{item.index}}">
+      <swiper-item bindtap="read" id="{{item.id}}">
+        <template is="headImage" data="{{...item}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='daily-list'>
+    <view class='daily' wx:for="{{days}}" wx:for-item="daily" wx:key="{{daily.index}}">
+      <text class="date-text" wx:if="{{daily.index === 0}}">今日热闻</text>
+      <view class="date-text" wx:else>{{daily.date}}</view>
+
+      <view class='daily-post' wx:for="{{daily.stories}}" wx:key="{{item.index}}" id="{{item.id}}" bindtap='read'>
+        <text class='daily-post-title'>{{item.title}}</text>
+        <image class='daily-post-img' src='{{item.images[0]}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <template is="back2top" wx:if="{{showBack2Top}}"/>
+
+</view>

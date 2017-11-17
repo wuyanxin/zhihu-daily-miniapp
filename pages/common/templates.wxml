@@ -1,0 +1,16 @@
+
+<!-- 首页或文章页头部图片 -->
+<template name="headImage">
+  <view class='headimage'>
+    <image class='headimage-img' src="{{image}}" mode='scaleToFill'></image>
+    <view class='headimage-img-mask'></view>
+    <text class='headimage-txt'>{{title}}</text>
+  </view>
+</template>
+
+<!-- 返回顶部 -->
+<template name="back2top">
+  <view class='back2top' bindtap='back2top'>
+    <image src='/assets/images/ico_back2top.png'></image>
+  </view>
+</template>

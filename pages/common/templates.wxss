@@ -1,0 +1,45 @@
+
+/* 头图 */
+.headimage {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  overflow: hidden;
+}
+.headimage-img {
+  width: 100%;
+  display: block;
+}
+.headimage-img-mask {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .2);
+}
+.headimage-txt {
+  position:absolute;
+  bottom:46rpx;
+  padding:0 40rpx;
+  font-size:44rpx;
+  color:#ffffff;
+  text-align:justify;
+  line-height:1.2;
+  text-shadow:0 0 2rpx rgba(0,0,0,.4);
+}
+
+
+/* 返回顶部  */
+.back2top {
+  position: fixed;
+  bottom: 80rpx;
+  right: 60rpx;
+}
+
+.back2top image {
+  width: 100rpx;
+  height: 100rpx;
+  opacity:.8;
+}

@@ -1,0 +1,25 @@
+/**app.wxss**/
+
+@import "./pages/common/templates.wxss";
+
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #F6F6F6;  
+}
+
+.container {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.clearfix{
+  overflow:hidden;
+  _zoom:1;
+}
+

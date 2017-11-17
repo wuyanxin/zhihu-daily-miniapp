@@ -1,0 +1,7 @@
+<!--pages/post/post.wxml-->
+<import src="../common/templates.wxml"/>
+<import src="../../utils/wxParse/wxParse.wxml"/>
+
+<template is="headImage" data="{{...post}}"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+<template is="back2top" wx:if="{{showBack2Top}}"/>
